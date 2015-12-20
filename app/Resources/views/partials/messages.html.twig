@@ -1,0 +1,12 @@
+{% if app.request.hasPreviousSession %}
+{%   for type, messages in app.session.flashbag.all() %}
+{%     for message in messages %}
+<div class="Flash--{{ type }}" data-closable>
+  {{ message }}
+  <button class="Flash__button" aria-label="{{ 'app.flash.close' | trans() }}" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{%     endfor %}
+{%   endfor %}
+{% endif %}

@@ -1,0 +1,39 @@
+# Add directories, files, and symbolic links which shall not be stored within
+# this git repository here.
+
+# Numerous always-ignore extensions
+*.diff
+*.orig
+*.rej
+*.swp
+*~
+.idea
+
+# Configuration files to be customized
+/app/config/parameters.yml
+/phpunit.xml
+/.drone.sec.yml
+
+# Cache and log files
+/var/*
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+!/var/logs
+/var/logs/*
+!var/logs/.gitkeep
+!/var/sessions
+/var/sessions/*
+!var/sessions/.gitkeep
+!var/SymfonyRequirements.php
+
+# Generated files
+/build/
+/web/bundles/
+/web/css/
+/web/js/
+/auth.json
+
+# Vendor libraries
+/vendor/
+/node_modules/*

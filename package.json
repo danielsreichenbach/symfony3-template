@@ -1,0 +1,29 @@
+{
+  "name": "symfony3-template",
+  "description": "A Symfony 3.0 baseline project",
+  "version": "1.0.0",
+  "keywords": [
+    "build",
+    "assets"
+  ],
+  "license": "MIT",
+  "homepage": "http://marenkay.com/",
+  "author": "Daniel S. Reichenbach <daniel@kogitoapp.com>",
+  "private": true,
+  "devDependendies": {
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "laravel-elixir": "^4.0.4",
+    "laravel-elixir-vueify": "^1.0.1",
+    "normalize-libsass": "^1.0.3",
+    "vue": "^1.0.11",
+    "vue-async-data": "^1.0.2",
+    "vue-resource": "^0.1.17"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --production"
+  }
+}

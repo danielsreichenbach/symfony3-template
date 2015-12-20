@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ app.request.locale }}">
+<head>
+  <meta charset="{{ _charset }}"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{% block title %}{{ 'app.title' | trans() }}{% endblock %} &mdash; {{ 'app.suffix' | trans() }}</title>
+{% block metadata %}
+  <!-- site metadata following -->
+{% endblock metadata %}
+  <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+{% block stylesheets %}
+  <!-- style sheets following -->
+{% endblock %}
+</head>
+<body id="{% block bodyId %}index{% endblock bodyId %}" class="{% block bodyClass %}index{% endblock bodyClass %}">
+{% block body %}
+  <!-- body -->
+{% endblock body %}
+{% block javascripts %}
+  <!-- scripts following -->
+{% endblock javascripts %}
+
+{% include 'partials/trackers.html.twig' %}
+</body>
+</html>

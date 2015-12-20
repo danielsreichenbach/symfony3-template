@@ -1,0 +1,5 @@
+{% if app.environment not in [ 'prod' ] %}
+  <!-- no trackers displayed in "{{ app.environment }}" environment -->
+{% else %}
+  <!-- google analytics -->
+{% endif %}
