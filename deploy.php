@@ -11,22 +11,22 @@ localServer('local')
     ->stage('local')
     ->env('deploy_path', __DIR__.'/../website-localhost');
 
-server('stage', 'ipsum.marenkay.com', 22)
-    ->user('daniel')
+server('stage', 'your.server.com', 22)
+    ->user('johndoe')
     ->forwardAgent()
     ->stage('staging')
-    ->env('deploy_path', '/var/www/sf3-stage.marenkay.com');
+    ->env('deploy_path', '/var/www/staging.symfony3-template.com');
 
-server('prod', 'ipsum.marenkay.com', 22)
-    ->user('daniel')
+server('prod', 'your.server.com', 22)
+    ->user('johndoe')
     ->forwardAgent()
     ->stage('production')
-    ->env('deploy_path', '/var/www/sf3.marenkay.com');
+    ->env('deploy_path', 'production.symfony3-template.com');
 
 /**
  * Deployment settings
  */
-set('repository', 'git@github.com:danielsreichenbach/symfony3-template.git');
+set('repository', 'https://github.com/danielsreichenbach/symfony3-template.git');
 set('keep_releases', 3);
 set('shared_dirs', ['node_modules', 'vendor']);
 set('shared_files', ['app/config/parameters.yml']);

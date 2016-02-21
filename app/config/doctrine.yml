@@ -4,3 +4,13 @@ doctrine_migrations:
     namespace:  Acme\Migrations
     table_name: app_migrations
     name:       "Doctrine Migrations"
+
+# Doctrine Extensions Configuration
+stof_doctrine_extensions:
+    default_locale: "%app.locale%"
+    orm:
+        default:
+            loggable: true
+            sluggable: true
+            softdeleteable: true
+            timestampable: true

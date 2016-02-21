@@ -1,0 +1,35 @@
+{
+    "name": "danielsreichenbach/acme-fixture-bundle",
+    "type": "symfony-bundle",
+    "description": "Fixtures bundle for Acme.",
+    "keywords": ["fixture"],
+    "license": "MIT",
+    "homepage": "http://marenkay.com/",
+    "authors": [
+        {
+            "name": "Daniel S. Reichenbach",
+            "email": "daniel@kogitoapp.com",
+            "homepage": "http://marenkay.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/danielsreichenbach/symfony3-template/issues",
+        "source": "https://github.com/danielsreichenbach/symfony3-template"
+    },
+    "require": {
+        "php":                                      ">=5.5.9",
+
+        "doctrine/doctrine-bundle":                 "^1.6"
+    },
+    "require-dev": {
+        "doctrine/doctrine-fixtures-bundle":        "^2.3"
+    },
+    "suggest": {
+        "doctrine/mongodb-odm":                     "1.0.*",
+        "doctrine/orm":                             "^2.5"
+    },
+    "autoload": {
+        "psr-4": { "Acme\\Bundle\\FixturesBundle\\": "" }
+    }
+}

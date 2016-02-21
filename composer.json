@@ -1,14 +1,14 @@
 {
-    "name": "daniel/test.3.0",
+    "name": "danielsreichenbach/symfony3-template",
     "description": "A Symfony 3.0 baseline project",
     "type": "project",
     "license": "MIT",
-    "homepage": "http://marenkay.com/",
+    "homepage": "http://marenkay.com",
     "authors": [
         {
             "name": "Daniel S. Reichenbach",
             "email": "daniel@kogitoapp.com",
-            "homepage": "http://marenkay.com",
+            "homepage": "http://marenkay.com/",
             "role": "Developer"
         }
     ],
@@ -17,27 +17,30 @@
         "source": "https://github.com/danielsreichenbach/symfony3-template"
     },
     "require": {
-        "php":                                      ">=5.5.9",
+        "php":                                      ">=5.5.9|^7.0",
         "ext-curl":                                 "*",
+        "ext-pdo":                                  "*",
         "ext-pdo_mysql":                            "*",
 
         "symfony/symfony":                          "3.0.*",
         "doctrine/orm":                             "^2.5",
         "doctrine/doctrine-bundle":                 "^1.6",
-        "doctrine/doctrine-cache-bundle":           "^1.2",
+        "doctrine/doctrine-cache-bundle":           "^1.3",
         "symfony/swiftmailer-bundle":               "^2.3",
         "symfony/monolog-bundle":                   "^2.8",
         "sensio/distribution-bundle":               "^5.0",
         "sensio/framework-extra-bundle":            "^3.0.2",
         "incenteev/composer-parameter-handler":     "^2.0",
+        "symfony/expression-language":              "^3.0",
         "ramsey/uuid-doctrine":                     "^1.0",
         "doctrine/doctrine-fixtures-bundle":        "^2.3",
-        "doctrine/doctrine-migrations-bundle":      "^1.1"
+        "doctrine/doctrine-migrations-bundle":      "^1.1",
+        "stof/doctrine-extensions-bundle":          "^1.2"
     },
     "require-dev": {
         "sensio/generator-bundle":                  "^3.0",
-        "symfony/phpunit-bridge":                   "^2.7",
-        "escapestudios/symfony2-coding-standard":   "^2.8",
+        "symfony/phpunit-bridge":                   "^3.0",
+        "escapestudios/symfony2-coding-standard":   "^2.9",
         "phpspec/phpspec":                          "^2.4",
         "henrikbjorn/phpspec-code-coverage":        "^2.0"
     },

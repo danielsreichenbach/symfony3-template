@@ -12,6 +12,7 @@
 # Configuration files to be customized
 /app/config/parameters.yml
 /phpunit.xml
+/phpspec.yml
 /.drone.sec.yml
 
 # Cache and log files
@@ -33,6 +34,7 @@
 /web/css/
 /web/js/
 /auth.json
+/npm-debug.log
 
 # Vendor libraries
 /vendor/

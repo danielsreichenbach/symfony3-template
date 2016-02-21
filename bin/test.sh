@@ -1,6 +1,8 @@
 #!/bin/sh
 #
 
+NAMESPACE="Acme"
+
 if ! [ -d node_modules ] ; then
     npm --silent install
 fi
@@ -14,7 +16,7 @@ bin/console doctrine:schema:validate    --env=test --ansi --no-interaction
 bin/console doctrine:fixtures:load      --env=test --ansi --no-interaction
 bin/console assets:install web          --env=test --ansi --no-interaction --symlink
 bin/console server:start                           --ansi --no-interaction
-vendor/bin/phpcs --colors --standard=vendor/escapestudios/symfony2-coding-standard/Symfony2 --ignore=tests/,src/Acme/*/*/spec/ src
-gulp
+vendor/bin/phpcs --colors --standard=vendor/escapestudios/symfony2-coding-standard/Symfony2 --ignore=tests/,src/${NAMESPACE}/*/*/spec/ src
+node_modules/.bin/gulp
 bin/console server:stop                            --ansi --no-interaction
 bin/console doctrine:database:drop      --env=test --ansi --no-interaction --force

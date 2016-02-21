@@ -1,0 +1,9 @@
+/* TEAM */
+    Daniel S. Reichenbach <daniel@kogitoapp.com> -- Developer -- https://twitter.com/marenkay
+
+/* THANKS */
+    Symfony project <http://symfony.com/>
+
+/* SITE */
+    Standards: HTML5, CSS3
+    Software: Go Git Service, Drone CI, Symfony2, Atom <3

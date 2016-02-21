@@ -1,0 +1,10 @@
+formatter.name: progress
+
+extensions:
+    - PhpSpec\Extension\CodeCoverageExtension
+
+code_coverage:
+    format:
+        - html
+    output:
+        html: build/coverage

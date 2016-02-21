@@ -7,5 +7,5 @@ if [ -z "$*" ]; then
     exit;
 fi
 
-mkdir -p src/${NAMESPACE}/Compnent/$1/
-touch src/${NAMESPACE}/Compnent/$1/.gitkeep
+mkdir -p src/${NAMESPACE}/Component/$1/
+touch src/${NAMESPACE}/Component/$1/.gitkeep
